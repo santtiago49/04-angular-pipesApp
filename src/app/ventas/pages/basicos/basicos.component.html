@@ -4,19 +4,24 @@
 </div>
 
 <div class="grid">
-    
+
     <div class="col-4">
-        <p-card header="uppercase">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <p-card [header]="lowercase | uppercase">
+            {{ lowercase }}
         </p-card>
     </div>
 
     <div class="col-4">
-       2
+        <p-card [header]="uppercase | lowercase">
+            {{ uppercase }}
+        </p-card>
     </div>
 
+
     <div class="col-4">
-        3
+        <p-card [header]="nombreCompleto | titlecase">
+            {{ nombreCompleto }}
+        </p-card>
     </div>
 
 </div>
