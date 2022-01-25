@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 // Importaciones de primeNg
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
+import { AppRouteModule } from './app-route.module';
 
 
 
@@ -14,9 +14,9 @@ import { SharedModule } from './shared/shared.module';
     AppComponent
   ],
   imports: [
+    AppRouteModule,
     BrowserModule,
-    SharedModule,
-    PrimeNgModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
