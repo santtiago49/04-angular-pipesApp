@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 // Importaciones de primeNg
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -14,6 +15,7 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     PrimeNgModule
   ],
   providers: [],
