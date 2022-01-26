@@ -17,4 +17,6 @@ export class BasicosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  fecha: Date = new Date();
+
 }
