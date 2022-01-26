@@ -31,14 +31,18 @@
 
     <div class="col-6">
         <p-card>
-            fecha
+            <p>fecha</p>
+            <p>fecha | date:'hh:s  LLLL yy' </p>
+            <p>fecha | date:'long'</p>
         </p-card>
     </div>
 
 
     <div class="col-6">
         <p-card>
-            {{ fecha | date:'hh:s LLLL yy' }}
+            <p>{{ fecha }}</p>
+            <p>{{ fecha | date:'hh:s  LLLL yy' }}</p>
+            <p>{{ fecha | date:'long':'':'fr-CA'}}</p>
         </p-card>
     </div>
 
