@@ -25,4 +25,13 @@ export class NoComunesComponent {
     'other':'tenemos # clientes esperando'
   }
 
+  cambiarNombre(){
+    this.nombre = 'Santiago';
+    this.genero = 'masculino';
+  }
+
+  eliminarCliente(){
+    this.clientes.pop();
+  }
+
 }
