@@ -34,4 +34,26 @@ export class NoComunesComponent {
     this.clientes.pop();
   }
 
+  persona = {
+    nombre: 'Santiago',
+    edad: 20,
+    'estado Civil': 'soltero'
+  }
+
+  heroes = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Batman',
+      vuela: false
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    }
+  ]
+
+
 }
