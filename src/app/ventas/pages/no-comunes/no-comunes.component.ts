@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -54,6 +55,15 @@ export class NoComunesComponent {
       vuela: false
     }
   ]
+
+  // Async Pipe 
+  miObservable = interval(1000);
+
+  miPromesa = new Promise( (resolve) => {
+    setTimeout( () => {
+      resolve( 'tenemos la data papurrix');
+    }, 3000)
+  })
 
 
 }
