@@ -36,6 +36,7 @@ ngOnInit() {
         {
             label:'Pipes personalizados',
             icon: 'pi pi-cog',
+            routerLink:'ordenar'
         }
     ]
 }
