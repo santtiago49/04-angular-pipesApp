@@ -11,6 +11,8 @@ export class OrdenarComponent {
 
   enMayuscula: boolean = true;
 
+  ordenarPor: string = ''
+
 
   cambiarMayusculas(){
     this.enMayuscula = !this.enMayuscula;
@@ -38,6 +40,10 @@ export class OrdenarComponent {
       color: 0
     },
   ]
+
+  cambiarOrden(value: string){
+    this.ordenarPor = value;
+  }
 
 
 }
